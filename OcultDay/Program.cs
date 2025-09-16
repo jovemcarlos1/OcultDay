@@ -1,4 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using AmigoOcultoApp;
+
 Console.WriteLine("Hello, World!");
 
 class OcultDay
@@ -25,7 +27,8 @@ class OcultDay
                     AdicionarParticipante();
                     break;
                 case "2":
-                    RemoverParticipante();
+                    Gerenciador gerenciador = new Gerenciador();
+                    gerenciador.RemovaParticipante(ListaDeParticipantes, "Carlos");
                     break;
                 case "3":
                     ListarParticipantes();

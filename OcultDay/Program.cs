@@ -1,15 +1,20 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-
+﻿using System;
+using System.Collections.Generic;       
+using System.Linq;  
+using System.Text;
+using System.Threading.Tasks;
+using OcultDay2;
 class OcultDay
 {
     static List<string> ocultDays = new List<string>();
     static Dictionary<string, string> pares = new Dictionary<string, string>();
     static bool sorteioRealizado = false;
 
-    public void Main()
+    static void Main(string[] args)
     {
-        while (true) {             
+        OsParticipantes participantes = new OsParticipantes();
+        while (true) 
+        {
             Console.Clear();
             Console.WriteLine("====== Sistema de Amigo Oculto ======");
             Console.WriteLine("1. Adicionar partcipante");
@@ -22,16 +27,16 @@ class OcultDay
             switch (opcao)
             {
                 case "1":
-                    AdicionarParticipante();
+                   participantes.AdicionarParticipante();
                     break;
                 case "2":
-                    RemoverParticipante();
+                   // RemoverParticipante();
                     break;
                 case "3":
-                    ListarParticipantes();
+                   // ListarParticipantes();
                     break;
                 case "4":
-                    RealizarSorteio();
+                   // RealizarSorteio();
                     break;
                 case "5":
                     return;

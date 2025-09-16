@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OcultDay2
+namespace OcultDay
 {
     public class Participante
     {
@@ -31,8 +31,6 @@ namespace OcultDay2
                 Participantes.Add(novoParticipante);
 
                 Console.WriteLine($"Participante {nomeDigitado} adicionado com sucesso!");
-                Console.WriteLine("Pressione qualquer tecla para continuar...");
-                Console.ReadKey();
             }
         }
     }

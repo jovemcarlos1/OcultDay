@@ -8,8 +8,9 @@ namespace OcultDay
 {
     public class OcultDayMain
     {
-        public OcultDayMain() {
-            
+        OsParticipantes participantes;
+        public OcultDayMain(OsParticipantes osparticipantes) {
+            participantes = osparticipantes;
         }
         public void Menu()
         {
@@ -34,7 +35,7 @@ namespace OcultDay
             switch (valor)
             {
                 case 1:
-                    //AdicionarParticipante();
+                    participantes.AdicionarParticipante();
                     break;
                 case 2:
                     //RemoverParticipante();

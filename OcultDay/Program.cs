@@ -2,6 +2,10 @@
 using OcultDay;
 
 Console.WriteLine("Bem vindo ao OcultDay!");
-OcultDayMain ocultDay = new OcultDayMain();
+OsParticipantes participantes = new OsParticipantes();
+
+OcultDayMain ocultDay = new OcultDayMain(
+    participantes
+    );
 ocultDay.Menu();
 Console.WriteLine("Teste");

@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+// See https://aka.ms/new-console-template for more information
 using OcultDay;
 
 Console.WriteLine("Bem vindo ao OcultDay!");

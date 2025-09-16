@@ -36,6 +36,7 @@ namespace OcultDay
             {
                 case 1:
                     participantes.AdicionarParticipante();
+                    participantes.RetornarLista();
                     break;
                 case 2:
                     //RemoverParticipante();

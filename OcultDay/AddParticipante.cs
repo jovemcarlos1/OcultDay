@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace OcultDay
 {
     public class Participante
@@ -33,5 +34,13 @@ namespace OcultDay
                 Console.WriteLine($"Participante {nomeDigitado} adicionado com sucesso!");
             }
         }
+        public List<Participante> RetornarLista()
+        {
+
+            return Participantes;
+        }
     }
+   
+        
 }
+
